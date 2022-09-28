@@ -26,7 +26,7 @@ services:
     hostname: nodejsserver
     depends_on:
       - db
-    command: node index.js
+    command: bash -c "npm install --quiet && node index.js"
 
   db:
     platform: linux/x86_64
